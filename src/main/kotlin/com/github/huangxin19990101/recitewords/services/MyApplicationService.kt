@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.huangxin19990101.recitewords.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.huangxin19990101.recitewords.MyBundle
 
 class MyApplicationService {
 
