@@ -15,4 +15,18 @@
         <listener class="com.github.huangxin19990101.recitewords.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+    <actions>
+        <group
+                id="org.intellij.sdk.action.GroupedActions"
+                text="Static Grouped Actions"
+                popup="true"
+                icon="com.github.huangxin19990101.recitewords.icon.SdkIcons.Sdk_default_icon">
+            <action id="askQuestionAction"
+                    class="com.github.huangxin19990101.recitewords.actions.AskQuestionAction" text="AskQuestionAction"/>
+            <add-to-group
+                    group-id="RightToolbarSideGroup"
+                    anchor="after"
+                    relative-to-action="askQuestionAction"/>
+        </group>
+    </actions>
 </idea-plugin>
