@@ -7,7 +7,8 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.huangxin19990101.recitewords.services.MyApplicationService"/>
+        <applicationService
+                serviceImplementation="com.github.huangxin19990101.recitewords.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.huangxin19990101.recitewords.services.MyProjectService"/>
     </extensions>
 
@@ -18,15 +19,24 @@
     <actions>
         <group
                 id="org.intellij.sdk.action.GroupedActions"
-                text="Static Grouped Actions"
+                text="Recite Words"
                 popup="true"
                 icon="com.github.huangxin19990101.recitewords.icon.SdkIcons.Sdk_default_icon">
-            <action id="askQuestionAction"
-                    class="com.github.huangxin19990101.recitewords.actions.AskQuestionAction" text="AskQuestionAction"/>
-            <add-to-group
-                    group-id="RightToolbarSideGroup"
-                    anchor="after"
-                    relative-to-action="askQuestionAction"/>
+            <add-to-group group-id="MainMenu"/>
+            <action id="StartAction"
+                    class="com.github.huangxin19990101.recitewords.actions.StartAction"
+                    text="Getting Start"/>
+            <action id="TestAction"
+                    class="com.github.huangxin19990101.recitewords.actions.SetTheCountOfWordsAction"
+                    text="Set The Count Of Words">
+            </action>
+            <group id="EnglishVocabularyGroup" popup="true"
+                   class="com.github.huangxin19990101.recitewords.groups.DynamicActionGroup" text="English Vocabulary"/>
+            <group id="JapaneseVocabularyGroup" popup="true"
+                   class="com.github.huangxin19990101.recitewords.groups.DynamicActionGroup"
+                   text="Japanese Vocabulary"/>
+            <group id="RandomGroup" popup="true"
+                   class="com.github.huangxin19990101.recitewords.groups.DynamicActionGroup" text="Random Test"/>
         </group>
     </actions>
 </idea-plugin>
