@@ -23,6 +23,11 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    implementation("com.j256.ormlite:ormlite-jdbc:6.1")
+    implementation("org.xerial:sqlite-jdbc:3.39.2.1")
+}
+
 // Set the JVM language level used to compile sources and generate files - Java 11 is required since 2020.3
 kotlin {
     jvmToolchain {

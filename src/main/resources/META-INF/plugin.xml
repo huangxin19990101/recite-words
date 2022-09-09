@@ -10,6 +10,10 @@
         <applicationService
                 serviceImplementation="com.github.huangxin19990101.recitewords.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.huangxin19990101.recitewords.services.MyProjectService"/>
+        <notificationGroup id="Custom Notification Group"
+                           displayType="BALLOON"
+key="notification.group.name"
+        />
     </extensions>
 
     <applicationListeners>
@@ -23,9 +27,9 @@
                 popup="true"
                 icon="com.github.huangxin19990101.recitewords.icon.SdkIcons.Sdk_default_icon">
             <add-to-group group-id="MainMenu"/>
-            <action id="StartAction"
-                    class="com.github.huangxin19990101.recitewords.actions.StartAction"
-                    text="Getting Start"/>
+            <action id="BeginAction"
+                    class="com.github.huangxin19990101.recitewords.actions.BeginAction"
+                    text="Begin"/>
             <action id="TestAction"
                     class="com.github.huangxin19990101.recitewords.actions.SetTheCountOfWordsAction"
                     text="Set The Count Of Words">

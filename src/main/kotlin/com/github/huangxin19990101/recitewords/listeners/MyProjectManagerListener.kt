@@ -9,7 +9,7 @@ internal class MyProjectManagerListener : ProjectManagerListener {
 
     override fun projectOpened(project: Project) {
         project.service<MyProjectService>()
-
+        print(project.service<MyProjectService>() == project.service<MyProjectService>())
         print(System.getenv("CI"))
     }
 }
