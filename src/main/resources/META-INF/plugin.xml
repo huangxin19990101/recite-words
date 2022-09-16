@@ -36,12 +36,12 @@
                     text="Set The Count Of Words">
             </action>
             <group id="EnglishVocabularyGroup" popup="true"
-                   class="com.github.huangxin19990101.recitewords.groups.DynamicActionGroup" text="English Vocabulary"/>
+                   class="com.github.huangxin19990101.recitewords.groups.EnglishActionGroup" text="English Vocabulary"/>
             <group id="JapaneseVocabularyGroup" popup="true"
-                   class="com.github.huangxin19990101.recitewords.groups.DynamicActionGroup"
+                   class="com.github.huangxin19990101.recitewords.groups.EnglishActionGroup"
                    text="Japanese Vocabulary"/>
             <group id="RandomGroup" popup="true"
-                   class="com.github.huangxin19990101.recitewords.groups.DynamicActionGroup" text="Random Test"/>
+                   class="com.github.huangxin19990101.recitewords.groups.EnglishActionGroup" text="Random Test"/>
         </group>
     </actions>
 </idea-plugin>
