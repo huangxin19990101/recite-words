@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.huangxin19990101.recitewords</id>
-    <name>recite-words</name>
+    <name>java-test</name>
     <vendor>huangxin19990101</vendor>
 
     <depends>com.intellij.modules.platform</depends>
@@ -12,7 +12,8 @@
         <projectService serviceImplementation="com.github.huangxin19990101.recitewords.services.MyProjectService"/>
         <notificationGroup id="Custom Notification Group"
                            displayType="BALLOON"
-key="notification.group.name"
+                           key="notification.group.name"
+                           bundle="messages.MyBundle"
         />
     </extensions>
 

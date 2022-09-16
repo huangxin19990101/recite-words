@@ -1,1 +1,1 @@
-rootProject.name = "recite-words"
+rootProject.name = "java-test"
